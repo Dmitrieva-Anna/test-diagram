@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "ibmplexsans";
+    src: url(/fonts/ibmplexsans-regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes render {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.main_diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "ibmplexsans", "arial", sans-serif;
+}
+
+.main_circle {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: column;
+    align-items: center;
+    max-width: 800px; */
+}
+
+.unit {
+    fill: none;
+    stroke-width: 1;
+
+    animation-name: render;
+    animation-duration: 1.5s;
+}
+
+.unit:nth-child(1) {
+    stroke: #fcd329;
+    stroke-dasharray: 39 0 28;
+    stroke-dashoffset: -82;
+}
+
+.unit:nth-child(2) {
+    stroke: #70a84b;
+    stroke-dasharray: 32 100;
+    stroke-dashoffset: -15;
+}
+
+/* .unit:nth-child(3) {
+    stroke: #ffffff;
+    stroke-dasharray: 29 100;
+    stroke-dashoffset: -71;
+} */
+
+.main_item_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_list {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.item_list_title {
+    margin-right: 10px;
+    width: 115px;
+    font-family: "ibmplexsans", "arial", sans-serif;
+}
+
+.item_list_human {
+    text-align: end;
+    font-family: "ibmplexsans", "arial", sans-serif;
+}
+
+.static_percent {
+    margin-bottom: 5px;
+    font-family: "ibmplexsans", "arial", sans-serif;
+}
+/* .item_percent_plus {
+    margin-left: 20px;
+    border: 1px solid black;
+    /* background: linear-gradient(to right, rgb(112, 248, 70) 50%, transparent 50%); */
+/* width: 75px;
+    text-align: end;
+    font-size: small;
+    border: 1px solid black;
+    text-align: right;
+    display: flex;
+    align-items: center; */
+/* } */
+
+.item_percent_plus_promo {
+    font-family: "ibmplexsans", "arial", sans-serif;
+    background: linear-gradient(to right, #70a84b 40%, transparent 40%);
+    border: 2px solid rgba(204, 204, 204, 0.9);
+    border-radius: 5px;
+    margin-left: 20px;
+    /* background: linear-gradient(to right, rgb(112, 248, 70) 50%, transparent 50%); */
+    width: 75px;
+    text-align: end;
+    font-size: small;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.item_percent_prom {
+    width: 75px;
+}
+
+.item_percent_plus_scep {
+    font-family: "ibmplexsans", "arial", sans-serif;
+    background: linear-gradient(to right, #fcd329 40%, transparent 40%);
+    border: 2px solid rgba(204, 204, 204, 0.9);
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 75px;
+    text-align: end;
+    font-size: small;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.item_percent_scep {
+    font-family: "ibmplexsans", "arial", sans-serif;
+    width: 75px;
+}
+
+.item_percent_plus_crit {
+    font-family: "ibmplexsans", "arial", sans-serif;
+    background: linear-gradient(to right, #ed5243 40%, transparent 40%);
+    border: 2px solid rgba(204, 204, 204, 0.9);
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 75px;
+    font-size: small;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.item_percent_crit {
+    font-family: "ibmplexsans", "arial", sans-serif;
+    width: 75px;
+}
+
+.chart-text {
+    font-size: 0.1em;
+    line-height: 1;
+    text-anchor: middle;
+    fill: violet;
+}
+
+.chart {
+    position: relative;
+}
+
+.img_loyalty {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 940px;
+}
+
+.human_count_text {
+    color: #9d9d9c;
+    font-family: "ibmplexsans", "arial", sans-serif;
+}
