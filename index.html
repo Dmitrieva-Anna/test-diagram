@@ -10,38 +10,40 @@
 </head>
 
 <body>
-    <header>
-        <h1>Test-diagram</h1>
+    <header class="header_main">
+        <h1>Test-diagram by Anna Dmitrieva</h1>
     </header>
     <main>
         <section class="main_diagram">
             <div class="main_circle">
-                <img src="img/loyalty.svg" class="img_loyalty" alt="флаг">
+                <img src="img/loyalty.svg" class="img_loyalty" alt="flag">
                 <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
                     <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
                     <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
                     <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
-                    <g class="chart-main-text">
-                        <text class="chart-text" x="50%" y="50%">
-                            72.7%
-                        </text>
-                        <text class="chart-text" x="50%" y="53%">
-                            Лояльность
-                        </text>
-                        <text class="chart-text" x="50%" y="56%">
-                            ниже среднего
-                        </text>
-                        <text class="chart-text" x="50%" y="59%">
-                            по отрасли: FMCG
-                        </text>
-                        <text class="chart-text" x="50%" y="62%">
-                            значений слева от медианы
-                        </text>
-                        <text class="chart-text" x="50%" y="65%">
-                            52.0% - 83.1%
-                        </text>
-                    </g>
                 </svg>
+                <div class="circle_disc">
+                    <div class="circle_disc_percent_main">
+                        <p class="circle_disc_percent">72</p>
+                        <p class="circle_disc_percent_child">
+                            <sup>%</sup>
+                            <sub>.7</sub>
+                        </p>
+                    </div>
+                    <p class="circle_disc_text_relation">Лояльность</p>
+                    <p class="circle_disc_text_rating">ниже среднего</p>
+                    <p class="circle_disc_text">по отрасли: FMCG</p>
+                    <p class="circle_disc_text">значений слева от медианы</p>
+                    <p class="circle_disc_text_percent">52.0% - 83.1%</p>
+                    <div class="main">
+                        <div class="triangle"></div>
+                        <div>
+                            <p class="text">3.1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="gl"></div>
             </div>
             <div class="main_disc">
                 <ul class="main_item_list">
@@ -51,7 +53,7 @@
                             <p class="static_percent">32.0 %</p>
                             <span class="human_count_text">81</span>
                             <span>
-                                <img src="img/human_full.svg" class="img_human" alt="человек">
+                                <img src="img/human_full.svg" class="img_human" alt="human">
                             </span>
                         </div>
                         <div class="item_percent_plus_promo">
@@ -64,7 +66,7 @@
                             <p class="static_percent">39.1 %</p>
                             <span class="human_count_text">8</span>
                             <span class="img_human">
-                                <img src="img/human_full.svg" class="img_human" alt="человек">
+                                <img src="img/human_full.svg" class="img_human" alt="human">
                             </span>
                         </div>
                         <div class="item_percent_plus_scep">
@@ -77,7 +79,7 @@
                             <p class="static_percent">79.8 %</p>
                             <span class="human_count_text">7</span>
                             <span>
-                                <img src="img/human_full.svg" class="img_human" alt="человек">
+                                <img src="img/human_full.svg" class="img_human" alt="human">
                             </span>
                         </div>
                         <div class="item_percent_plus_crit">
@@ -86,7 +88,6 @@
                     </li>
                 </ul>
             </div>
-
         </section>
     </main>
 </body>
