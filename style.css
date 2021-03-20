@@ -43,18 +43,37 @@
     animation-name: render;
     animation-duration: 2s;
     stroke-linecap: round;
+    transition-property: all;
+    transition-duration: 1.5s;
 }
 
 .unit:nth-child(1) {
+    stroke: #e0dede;
+    animation-name: none;
+    stroke-dasharray: 82 14;
+    stroke-dashoffset: -82;
+}
+
+.unit:nth-child(2) {
     stroke: #fcd329;
     stroke-dasharray: 39 61;
     stroke-dashoffset: -82;
 }
 
-.unit:nth-child(2) {
+.unit:nth-child(2):hover {
+    opacity: 0.8;
+    stroke-width: 2;
+}
+
+.unit:nth-child(3) {
     stroke: #70a84b;
     stroke-dasharray: 25 75;
     stroke-dashoffset: -21;
+}
+
+.unit:nth-child(3):hover {
+    opacity: 0.8;
+    stroke-width: 2;
 }
 
 .main_item_list {
@@ -67,6 +86,10 @@
 .item_list {
     display: flex;
     margin-bottom: 20px;
+}
+
+.item_list:hover {
+    transform: scale(0.9);
 }
 
 .item_list_title {
@@ -165,6 +188,10 @@
     align-items: center;
 }
 
+.main:hover {
+    transform: scale(1.2);
+}
+
 .triangle {
     width: 0;
     height: 0;
@@ -193,6 +220,10 @@
     margin: 0;
 }
 
+.circle_disc_percent_main:hover {
+    transform: scale(1.2);
+}
+
 .circle_disc_percent {
     font-family: "ibmplexsans", "arial", sans-serif;
     font-size: 4em;
@@ -215,43 +246,40 @@
     color: #9d9d9c;
 }
 
-.circle_disc_text_relation {
+.circle_text_info {
     font-family: "ibmplexsans", "arial", sans-serif;
+    text-align: center;
+}
+
+.circle_disc_text_relation {
     font-size: 2em;
     font-weight: 800;
     color: #68625c;
 }
 
 .circle_disc_text_rating {
-    font-family: "ibmplexsans", "arial", sans-serif;
     color: #fcd329;
     font-size: 1.5em;
     font-weight: 800;
 }
 
 .circle_disc_text {
-    font-family: "ibmplexsans", "arial", sans-serif;
     color: #9d9d9c;
 }
 
 .circle_disc_text_percent {
     margin-bottom: 15px;
-    font-family: "ibmplexsans", "arial", sans-serif;
     color: #9d9d9c;
 }
 
-.vl {
-    border-left: 3px solid #cccccc;
-    height: 340px;
+.line {
     position: absolute;
-    left: 50px;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
     top: 230px;
-}
-
-.gl {
+    width: 70px;
+    height: 355px;
+    border-left: 2px solid #cccccc;
     border-top: 2px solid #cccccc;
-    width: 35px;
-    position: absolute;
-    left: 50px;
-    top: 230px;
+    border-bottom: 2px solid #cccccc;
 }
