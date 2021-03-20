@@ -97,7 +97,7 @@
     width: 115px;
     font-family: "ibmplexsans", "arial", sans-serif;
     color: #68625c;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .item_list_human {
@@ -110,7 +110,7 @@
     margin-bottom: 5px;
     font-family: "ibmplexsans", "arial", sans-serif;
     color: #68625c;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .item_percent_plus_promo {
@@ -252,14 +252,14 @@
 }
 
 .circle_disc_text_relation {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 800;
     color: #68625c;
 }
 
 .circle_disc_text_rating {
     color: #fcd329;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 800;
 }
 
